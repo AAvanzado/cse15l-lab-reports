@@ -1,6 +1,6 @@
 # Week 1 Lab Report
 
-The following is a tutorial about how to log into a course-specific accounton "ieng6"
+The following is a tutorial about how to log into a course-specific account on "ieng6"
 
 # 1. Installing VScode
 * Firstly, visit the [Visual Studio Code website](https://code.visualstudio.com/download) for the download links
@@ -14,4 +14,6 @@ The following is a tutorial about how to log into a course-specific accounton "i
 * If this is your first time logging in then you will be asked if you want to continue connecting to which you will enter "yes", followed by entering your password for the account
 
 # 3. Trying Some Commands
-
+* Test out some simple commands such as `pwd`, `cd`, `ls`, `mkdir`, and `cp`
+* Your class directory will typically be `/home/linux/ieng6/***` where *** is the name of your class and quarter (e.g. cs15lwi23)
+* In order to exit the terminal use either Ctrl + D or run the command `exit` 

@@ -17,6 +17,11 @@ The following is a tutorial about how to log into a course-specific account on "
 
 # 3. Trying Some Commands
 * Test out some simple commands such as `pwd`, `cd`, `ls`, `mkdir`, and `cp`
+  * `pwd` - stands for "prints working directory" and displays the current working directory
+  * `cd` - stands for "change directory" and changes the current working directory to the inputted path
+  * `ls` - stands for "list" and displays a list of files and folders from the inputted path
+  * `mkdir` - stands for "make directory" and creates a new directory
+  * `cp` - stands for "copy" and copies files
 * Your class directory will typically be `/home/linux/ieng6/***` where *** is the name of your class and quarter (e.g. cs15lwi23)
 * Example of a command using `ls`
 ![Image](commandExample.PNG)

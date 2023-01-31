@@ -59,12 +59,38 @@ public void testReverseInPlace1(){
     assertArrayEquals(new int[]{3,2,1}, input1);
 }
 ```
- * An input that doesn't induce a failure as a JUnit test
+## An input that doesn't induce a failure as a JUnit test
 ```
 public void testReverseInPlace1(){
     int[] input1 = {1,1,1};
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{1,1,1}, input1);
+}
 ```
- * The symptom, as the output of running the tests
- 
+## The symptom, as the output of running the tests
+ ![Image](Lab3BugSymptoms.PNG)
+## The bug
+## Before
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+        arr[i] = arr[arr.length - i - 1];
+    }
+}
+```
+## After
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length / 2; i += 1) { //changed to iterate through half the array
+        //implemented proper swapping functionality
+        int temp = arr[i];
+        arr[i] = arr[arr.length - i - 1];
+        arr[arr.length - i - 1] = temp;
+    }
+}
+```
+## Why the fix addresses the issue
+One issue in the initial reverseInPlace() function was that it was replacing the value at an index with the value at another index without properly swaping the two values at the two indices. In turn, the value at `arr[i]` would be overwritten and not assigned to the other index. The fix addresses this issue by utilizing a temporary integer variable in order to properaly swap the values at the two indices. Another issue is with how the function iterates through the array given the swaping nature of the indices. The fix addreses this issue as rather than iterating through the entire array, iterating through half the array instead would end the swaps at the correct index in order to properly reverse the array without incorrectly reswapping the array.
+
+# Part 3
+Something that I learned in week 2 was the idea of webservers and specifically how they utilize URLs in order to recieve input. While I had a general idea that URLs consisted of a path through a webpage, I didn't know that it was possible to use the URL itself within a program. Working with webservers has also helped my understanding of different components of a URL, such as the query, as I would sometimes look at the `?` in some URLs when I looked something up and now I understand what it is associated with.

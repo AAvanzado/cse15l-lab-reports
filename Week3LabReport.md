@@ -46,8 +46,8 @@ class StringServer  {
  * Similar to the first usage of `/add-message`, both the `main()` method and `handleRequest` method are called.
  * For `main()` the relevent argument is `String[] args` as `args[0]` which equals `7777` contains the port number of the webserver.
  * For `handleRequest()` the relevent arguement to this method is `URI url` which is `"http://localhost:7777/add-message?s=Second%20Test"`, the entire url of the webserver.
- * As for relevent fields of the class `String fullString` which is now `"First Test" + \n + Second Test + \n`, the string printed to the webserver. Another field is `String[] parameters` as `parameters[1]` contains the string `"Second Test"` which was inputted within the url as part of the query.
- * The `String fullString` field changes from `"First Test" + \n` to `"First Test" + \n + Second Test + \n`.
+ * As for relevent fields of the class `String fullString` which is now `"First Test" + \n + "Second Test" + \n`, the string printed to the webserver. Another field is `String[] parameters` as `parameters[1]` contains the string `"Second Test"` which was inputted within the url as part of the query.
+ * The `String fullString` field changes from `"First Test" + \n` to `"First Test" + \n + "Second Test" + \n`.
 
 # Part 2
 ## reverseInPlace() Method Bugs

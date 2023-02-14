@@ -2,7 +2,7 @@
 
 # Researching the `find` Command
 
-## `-mtime` Option
+## `-ctime` Option
 Example 1
 ```
 find written_2 -ctime 0

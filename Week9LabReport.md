@@ -18,7 +18,7 @@ Here, a bash script can be utilized in order to remove the requirement of having
 In my utilization of the bash script, there was only one command that was not part of it, and that was the step involving logging in to ieng6. This was because the bash script that I created was one of the files in the ieng6 server and thus in order to run the script, I first needed to log into the server to have access to it and subsequently run it.
 
 Here is the bash script that I created:
-![Image](ENTER_LINK_HERE)
+![Image](BashScript.png)
 
 Steps 2,3,5, and 6 are all the exact same commands that were initially run when doing Lab Report 4. The only difference that was introduced was the utilization of the `CPATH` variable that held the paths necessary to run the tests (steps 3 and 5).
 
@@ -43,9 +43,7 @@ As previously mentioned, the `sed` command allowed me to edit the `ListExamples.
 ## Full Execution
 
 Logging into ieng6
-![Image](ENTER_LINK_HERE)
+![Image](Ieng6Login.png)
 
 Running the Bash Script
-![Image](ENTER_LINK_HERE)
-
-
+![Image](RunBashScript.png)

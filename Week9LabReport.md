@@ -40,10 +40,10 @@ As previously mentioned, the `sed` command allowed me to edit the `ListExamples.
   * In this case, I could have simply had `1` to be replaced with `2` which would result in the same outcome, but decided to use `index1` and `index2` in order to more clearly indicate my intention with the command to others. 
 * Finally, the `ListExamples.java` at the end indicates the file in which to make these changes.
 
-## Full Execution
+# Full Execution
 
-Logging into ieng6
+## Logging into ieng6
 ![Image](Ieng6Login.png)
 
-Running the Bash Script
+## Running the Bash Script
 ![Image](RunBashScript.png)
